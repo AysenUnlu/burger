@@ -74,7 +74,7 @@
 
    
 
-  * Running aplication can be reached at ----------
+  * Running aplication can be reached at https://warm-brushlands-25699.herokuapp.com
 
 
 ## Dependencies: ##
