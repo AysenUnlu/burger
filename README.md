@@ -88,7 +88,7 @@
 
 ## Usage: ##
 
-   - When the user visits ------, he sees a form where he can submit new burgers to be listed. He also sees burgers waiting to be devoured on the left side of the page and list of burgers that are devoured if-any on the right side of the page.
+   - When the user visits https://warm-brushlands-25699.herokuapp.com, he sees a form where he can submit new burgers to be listed. He also sees burgers waiting to be devoured on the left side of the page and list of burgers that are devoured if-any on the right side of the page.
 
      ![Welcome Menu](public/assets/img/Welcome.png)
      ---
