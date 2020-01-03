@@ -22,55 +22,55 @@
     - `server.js`: Sets up and starts the server that is listening on a port for requests. The default port number is 3000.
 
     - db:
-       |__ `schema.sql`: SQL queries are written in this file that does the following:
-       |   * Create the `burgers_db`.
-       |   * Switch to or use the `burgers_db`.
-       |   * Create a `burgers` table with these fields:
-       |       * **id**: an auto incrementing int that serves as the primary key. 
-       |       * **burger_name**: a string.
-       |       * **devoured**: a boolean.
-       |
-       |__ `seeds.sql`: Insert queries are written in this file to populate the `burgers` table. 6                   entries are created.
+       `schema.sql`: SQL queries are written in this file that does the following:
+       * Create the `burgers_db`.
+       * Switch to or use the `burgers_db`.
+       * Create a `burgers` table with these fields:
+            * **id**: an auto incrementing int that serves as the primary key. 
+            * **burger_name**: a string.
+            * **devoured**: a boolean.
+       
+        `seeds.sql`: Insert queries are written in this file to populate the `burgers` table. 6 entries are created.
    - config:
-      |
-      |__ `connection.js`: Sets up the code that connects Node to MySQL
-      |
-      |__ `orm.js`: Creates the methods that executes the necessary MySQL commands in the                         controllers. These are the methods we will need to use in order to retrieve and               store data in our database.
+      
+       `connection.js`: Sets up the code that connects Node to MySQL
+      
+       `orm.js`: Creates the methods that executes the necessary MySQL commands in the            controllers. These are the methods we will need to use in order to               retrieve and store data in our database.
 
                     * `selectAll()` : Selects all the data from a table
                     * `insertOne()` : Inserts table an entry with one assigned property.
                     * `updateOne()` : Updates the table with a new value for a property if primary                    key matches the primary key value.
    - models:
-          |
-          |__ `burger.js`: Code that calls the ORM functions using burger specific input for                         the ORM.
+          
+           `burger.js`: Code that calls the ORM functions using burger specific input                for the ORM.
 
    - controllers: 
-        |
-        |__ `burgers_controller.js`: Router is created for the app.
+        
+         `burgers_controller.js`: Router is created for the app.
 
    - views: 
-      |
-      |__ `index.handlebars`: Has a template that handlebars can render onto. Created a button in   |                       `index.handlebars` that submits the user input into the database.  
-      |
-      |__layouts:
-          |
-          |__ `main.handlebars`: Used by handlebars.
+      
+       `index.handlebars`: Has a template that handlebars can render onto. Created a button in `index.handlebars` that submits the user input into the database.  
+      
+      layouts:
+          
+          `main.handlebars`: Used by handlebars.
 
    - node_modules       
    - package.json
    - public
-      |
-      |__ assets:
-            |
-            |__ css:
-                  |
-                  |__ `burger_style.css`: Since bootstrap framework is used. This file is not                               utilized.
-            |
-            |__ img: This directory holds the screenshots of the application.
-            |
-            |__ js:
-                |
-                |__ `burgers.js` : Handles the events when the user  presses  the `devour` button                      for the burgers and `submit` button for the new burger entries.                     Ajax calls are made to the proper endpoints and data and/or                         parameters in URL are passed.    
+      
+       assets:
+            
+             css:
+                  
+                `burger_style.css`: Since bootstrap framework is used. This file is not                     utilized.
+            
+             img: This directory holds the screenshots of the application.
+            
+             js:
+                
+              `burgers.js` : Handles the events when the user  presses  the `devour` button for the burgers and `submit` button for the new burger entries.    Ajax calls are made to the proper endpoints and data and/or          parameters in URL are passed.    
 
    
 
@@ -123,10 +123,9 @@ I'm greatful for our instructor Omar Patel and TA's Tyler Bray, Matthew Calimbas
 
 The web sites that I found useful while implementing the application are listed below:
 
-  * https://www.npmjs.com/package/console.table
-  * https://www.w3schools.com/sql/func_mysql_sum.asp
+  * https://getbootstrap.com/docs/4.4/components/alerts/
+  * https://icons8.com/
   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-  * http://www.mysqltutorial.org/mysql-foreign-key/
   
 ## Licence: ##
 
