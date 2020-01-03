@@ -64,7 +64,7 @@
             
              css:
                   
-                `burger_style.css`: Since bootstrap framework is used. This file is not                     utilized.
+                `burger_style.css`: Since bootstrap framework is used. This file is not utilized.
             
              img: This directory holds the screenshots of the application.
             
