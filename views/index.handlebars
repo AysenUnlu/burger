@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="jumbotron">
+     <h2 class="text-center">EAT-DA-BURGER</h2>
+  </div>
+  <div class="row">
+      <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+              <img src="https://img.icons8.com/doodle/200/000000/hamburger.png" class="card-img-top p-4" alt="burger">
+              <div class="card-body">
+                <ol>
+                    {{#each burgers}}
+                      {{#unless devoured}}
+                        <li class="mb-1">
+                            {{burger_name}}
+                            <button type="button" class="btn btn-success btn-sm font-italic" data-id="{{id}}">Devour</button>
+                        </li>
+                      {{/unless}}
+                    {{/each}}  
+                </ol>
+             </div>
+          </div>
+
+      </div>
+      <div class="col-sm-4">
+         <form class="create-form">
+          <div class="form-group">
+              <label for="tarea">Enter Burger to Eat:</label>
+              <textarea class="form-control" id="tarea" name="name" rows="3"></textarea>
+              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </div>
+         </form> 
+      </div>
+      <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+              <img src="https://img.icons8.com/color/200/000000/smiling-mouth.png" class="card-img-top p-4" alt="burger">
+              <div class="card-body">
+                <ol>
+                    {{#each burgers}}
+                      {{#if devoured}}
+                         <li>
+                            {{burger_name}}
+                        </li>
+                      {{/if}}
+                    {{/each}}  
+                </ol>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>  
