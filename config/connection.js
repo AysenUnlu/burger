@@ -18,13 +18,13 @@ const connection=mysql.createPool({
 });
 
 //Make connection
-connection.connect(function(err){
+/*connection.connect(function(err){
     if(err){
         console.log("error connecting: "+err.stack);
         return;
     } 
     console.log("connected as id "+connection.threadId);
-});
+});*/
 
 //Export connection for our orm to use
 module.exports=connection;
