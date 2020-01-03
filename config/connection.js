@@ -9,7 +9,7 @@ const mysql=require("mysql");
     database:"burgers_db"
 });*/
 //heroku deployment
-const connection=mysql.createConnection({
+const connection=mysql.createPool({
     host:'us-cdbr-iron-east-05.cleardb.net',
     port:3306,
     user:'b27745781fcb1e',
