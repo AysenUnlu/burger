@@ -16,8 +16,8 @@
 ## Installation: ##
 
   * The application is deployed using Heroku: 
-
-  ![Burger](https://warm-brushlands-25699.herokuapp.com)
+  
+  [https://warm-brushlands-25699.herokuapp.com](https://warm-brushlands-25699.herokuapp.com)
 
   * The application has the following directory structure:
 
